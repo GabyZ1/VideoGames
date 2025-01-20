@@ -2,7 +2,7 @@
 
 -- 1. Agregar columna `popularitat` a Videojocs con valores entre 1 y 100
 ALTER TABLE videojocs
-ADD COLUMN popularitat TINYINT NOT NULL CHECK (popularitat BETWEEN 1 AND 100);
+ADD COLUMN popularitat TINYINT UNSIGNED CHECK (popularitat BETWEEN 1 AND 100);
 
 -- 2. Modificar longitud de `fabricant` en Plataformes a 150 caracteres
 ALTER TABLE plataformes
