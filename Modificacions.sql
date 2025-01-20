@@ -24,7 +24,7 @@ DROP COLUMN país;
 
 -- 6. Crear la tabla Editors
 CREATE TABLE editors (
-    id_editor INT AUTO_INCREMENT PRIMARY KEY,
+    id_editor INT PRIMARY KEY,
     nom_editor VARCHAR(100) NOT NULL
 );
 
